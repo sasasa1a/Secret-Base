@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+
+    "name": "SecretBasePoster",
+    "description": "SecretBaseで授業中にワイワイお喋りしよう！",
+    "version": "1.2",
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["jquery.min.js", "popup.js"],
+        "css": ["popup.css"]
+    }],
+    "permissions": [
+        "activeTab",
+        "background",
+        "storage",
+        "alarms",
+        "tabs"
+    ],
+    "icons": {
+        "128": "images/128px.png"
+    }
+
+}

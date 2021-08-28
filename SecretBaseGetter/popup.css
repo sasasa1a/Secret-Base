@@ -1,0 +1,106 @@
+* {
+    font-family: 'Stick';
+}
+
+body {
+    background: #D3959B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BFE6BA, #D3959B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*検索ボックス*/
+
+#input_table_name {
+    position: relative;
+    /*フォームの絶対位置*/
+    left: 0;
+    top: 10px;
+    outline: 0;
+    /*クリック時の青い枠線消す*/
+    height: 50px;
+    /*検索ボックスの高さ*/
+    padding: 0 10px;
+    width: 500px;
+    /*テキスト位置調整*/
+    /* border-radius:2px 0 0 2px;検索ボックスの角を丸める		 */
+    background: #eee;
+    /*検索ボックスの背景カラー*/
+}
+
+
+/*検索ボックス*/
+
+#input_form_movie_url {
+    position: relative;
+    /*フォームの絶対位置*/
+    left: 0;
+    top: 10px;
+    outline: 0;
+    /*クリック時の青い枠線消す*/
+    height: 50px;
+    /*検索ボックスの高さ*/
+    width: auto;
+    padding: 0 10px;
+    /*テキスト位置調整*/
+    /* border-radius:2px 0 0 2px;検索ボックスの角を丸める		 */
+    background: #eee;
+    /*検索ボックスの背景カラー*/
+}
+
+
+/*検索ボックス*/
+
+#input_form_movie_time {
+    position: relative;
+    /*フォームの絶対位置*/
+    left: 0;
+    top: 10px;
+    outline: 0;
+    /*クリック時の青い枠線消す*/
+    height: 50px;
+    /*検索ボックスの高さ*/
+    padding: 0 10px;
+    /*テキスト位置調整*/
+    /* border-radius:2px 0 0 2px;検索ボックスの角を丸める		 */
+    background: #eee;
+    /*検索ボックスの背景カラー*/
+}
+
+
+/*検索ボタン*/
+
+#clicked {
+    width: 100px;
+    /*検索ボタンの横幅*/
+    height: 50px;
+    /*検索ボタンの縦幅*/
+    position: relative;
+    /*検索ボタンの絶対位置*/
+    /* left:270px;検索ボタンの位置調整   */
+    top: 10px;
+    ;
+    border-radius: 0 2px 2px 0;
+    /*検索ボタンの角を丸める*/
+    background: #7fbfff;
+    /*検索ボタンの背景カラー*/
+    border: none;
+    /*検索ボタンの枠線を消す*/
+    color: #fff;
+    /*検索ボタンのテキストカラー*/
+    font-weight: bold;
+    /*検索ボタンのテキスト太字*/
+    font-size: 16px;
+    /*検索ボタンのフォントサイズ*/
+}
+
+
+/*検索ボタンマウスオーバー時*/
+
+#clicked:hover {
+    color: #666;
+    /*検索ボタンマウスオーバー時のフォントカラー*/
+}
