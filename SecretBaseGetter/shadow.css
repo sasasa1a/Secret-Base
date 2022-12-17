@@ -1,0 +1,37 @@
+#aaaa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999998;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    /*animation: flowing 2s linear ;*/
+    animation: anim 10s forwards;
+    /*animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    */
+    /*transform: translateX(100%);*/
+    /*初期位置*/
+}
+
+#bbbb {
+    position: absolute;
+    z-index: 9999999;
+}
+
+@keyframes flowing {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(-900px);
+    }
+}

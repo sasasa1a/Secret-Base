@@ -1,0 +1,36 @@
+{
+    "name": "SecretBaseGetter",
+    "version": "1.2",
+    "browser_action": {
+        "default_icon": {
+            "128": "images/128px.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2,
+    "description": "SecretBaseで授業中にワイワイお喋りしよう！",
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*",
+            "file:///*"
+        ],
+        "js": [
+            "commentgetter.js", "popup.js"
+        ]
+    }],
+    "web_accessible_resources": [
+        "inject.css",
+        "shadow.css"
+    ],
+    "permissions": [
+        "activeTab",
+        "background",
+        "storage",
+        "alarms",
+        "tabs"
+    ],
+    "icons": {
+        "128": "images/128px_2.png"
+    }
+}
